@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+
+header {
+    background: black;
+    width: 100%;
+}
+
+.list-header {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+.title-main {
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.stack {
+    margin-top: 40px;
+}
+
+.title-stack {
+    color: white;
+    text-align: center;
+}
+
+.stack_tecnologies {
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 3px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.img-stack {
+    opacity: 0.3;
+}
+
+.img-stack:hover {
+    opacity: 1;
+}
+
+.habilities h2 {
+    color: white;
+    text-align: center;
+}
+
+.list-habilities {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    color: white;
+}
+
+.items-habilities {
+    align-self: center;
+    border: 2px solid white;
+    background-color: rgb(219, 174, 49);
+    border-radius: 10px;
+    padding: 10px 40%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 25px;
+}
+
+.contacto h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.list-contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.footer-text {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    background: white;
+    padding: 10px 15px;
+}
