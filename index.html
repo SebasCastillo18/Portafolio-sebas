@@ -11,18 +11,25 @@
 <body>
     <header>
         <nav>
-            <ul  class="list-header">
-                <li><a href="#main">Inicio</a></li>
-                <li><a href="#tecnologies">Tecnologias</a></li>
-                <li><a href="#habilities">Habilidades</a></li>
-                <li><a href="#proyects">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="list-header">
+                <li><a class="links-main" href="#main">Inicio</a></li>
+                <li><a  class="links-main2" href="#tecnologies">Tecnologias</a></li>
+                <li><a  class="links-main3" href="#habilities">Habilidades</a></li>
+                <li><a  class="links-main4" href="#proyects">Proyectos</a></li>
+                <li><a  class="links-main5" href="#contacto">Contacto</a></li>
+                <button id="bdark"><img src="./images/dark-mode.png" alt=""></button>
             </ul>
+
         </nav>
     </header>
 
     <div class="container">
-        <h1 id="main" class="title-main">Desarrollador Web Full-Stack</h1>
+        <h1 id="main" class="title-main">Sobre Mi</h1>
+
+        <p>Soy Sebastian Castillo, Diseñador y desarrollador Web Full-Stack.
+             Me gusta realizar multiples proyectos, aprender constantemente 
+             diferentes tecnologias.
+        </p>
 
         <div id="tecnologies" class="stack">
             <h2 class="title-stack">Tecnologias</h2>
@@ -93,8 +100,9 @@
                     <a download href="./documents/cv.pdf"><img src="./images/cv.png" alt="" /></a>
                 </li>
 
-                <li> <a href="https://api.whatsapp.com/send/?phone=3229300414"> <img src="./images/phone.png" alt="" /></li></a>
-                   
+                <li> <a href="https://api.whatsapp.com/send/?phone=3229300414"> <img src="./images/phone.png" alt="" />
+                </li></a>
+
 
                 <li><a href="mailto:sebascasti2019gmail.com?"><img src="./images/email.png" alt="" /></a></li>
             </ul>
@@ -106,6 +114,31 @@
             </footer>
         </div>
     </div>
+
+    <script>
+        const bdark = document.querySelector('#bdark');
+        const body = document.querySelector('body');
+        const a = document.querySelector('.links-main');
+        const a1 = document.querySelector('.links-main2');
+        const a2 = document.querySelector('.links-main3');
+        const a3 = document.querySelector('.links-main4');
+        const a4 = document.querySelector('.links-main5');
+
+        bdark.addEventListener('click', e => {
+            body.classList.toggle('darkmode');
+            a.classList.toggle('darkmode');
+            a1.classList.toggle('darkmode');
+            a2.classList.toggle('darkmode');
+            a3.classList.toggle('darkmode');
+            a4.classList.toggle('darkmode');
+
+
+
+
+
+
+        });
+    </script>
 </body>
 
 </html>
