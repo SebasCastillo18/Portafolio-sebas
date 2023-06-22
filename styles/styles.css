@@ -28,6 +28,10 @@ header a {
     font-size: 30px;
 }
 
+header a:hover {
+    text-decoration: underline;
+}
+
 .container {
     margin-top: 70px;
 }
