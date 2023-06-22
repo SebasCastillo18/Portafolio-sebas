@@ -81,8 +81,11 @@ header a:hover {
 }
 
 .list-habilities {
+    list-style:none;
+    padding:0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     row-gap: 10px;
 
     color: white;
@@ -90,10 +93,11 @@ header a:hover {
 
 .items-habilities {
     align-self: center;
+    text-align: center;
     border: 2px solid white;
     background-color: rgb(219, 174, 49);
     border-radius: 10px;
-    padding: 10px 40%;
+    width:90%;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
