@@ -52,6 +52,13 @@ header a:hover {
     text-align: center;
 }
 
+.stack_tecnologies img {
+
+   
+   
+    background: transparent;
+}
+
 .stack_tecnologies {
     margin: 60px;
     display: flex;
@@ -67,13 +74,55 @@ header a:hover {
     -o-border-radius: 20px;
 }
 
-.img-stack {
-    opacity: 0.3;
+.stack_tecnologies li{
+    position:relative;
+    opacity: .99;
+    padding:10px 3px;
+    border-radius:30%;
+    background:linear-gradient(45deg, red, blue, deeppink, blue, red, blue,    deeppink, blue);
+    -webkit-border-radius:30%;
+    -moz-border-radius:30%;
+    -ms-border-radius:30%;
+    -o-border-radius:30%;
 }
 
-.img-stack:hover {
-    opacity: 1;
+@keyframes glowing {
+
+    0% {
+        background-position:0 0;
+    }
+    50% {
+        background-position:400% 0;
+    }
+    100% {
+        background-position:0 0;
+    }
 }
+
+.stack_tecnologies li::before {
+    content: "";
+    top: 0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    background:linear-gradient(45deg, red, blue, deeppink, blue, red, blue,    deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    filter:blur(8px);
+    -webkit-filter:blur(8px);
+    animation:glowing 20s linear infinite;
+    -webkit-animation:glowing 5s linear infinite;
+}
+
+
+
+
 
 .habilities h2 {
     color: white;
@@ -105,43 +154,68 @@ header a:hover {
     font-size: 25px;
 }
 
-
-
 .title-proyects {
-    color:white;
+    color: white;
     text-align: center;
-    margin:20px;
+    margin: 20px;
     font-size: 30px;
 }
 
-
-
 .list-proyects {
-    
-
     display: flex;
-    row-gap:20px;
+    row-gap: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+.list-proyects div {
+    position:relative;
+    opacity: .99;
+    padding:15px 10px;
+    border-radius:3%;
+    background:linear-gradient(45deg, rgb(0, 195, 255), rgb(42, 134, 255), rgb(238, 226, 65), rgb(6, 112, 63), rgb(67, 21, 119), blue,    deeppink, blue);
+    -webkit-border-radius:3%;
+    -moz-border-radius:3%;
+    -ms-border-radius:3%;
+    -o-border-radius:3%;
+}
+
+.list-proyects div::before {
+    content: "";
+    top: 0;
+    left:0;
+    position: absolute;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    background:linear-gradient(45deg, rgb(0, 195, 255), rgb(42, 134, 255), rgb(238, 226, 65), rgb(6, 112, 63), rgb(67, 21, 119), blue,    deeppink, blue);
+    background-size: 800%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    filter:blur(8px);
+    -webkit-filter:blur(8px);
+    animation:glowing 20s linear infinite;
+    -webkit-animation:glowing 15s linear infinite;
+}
+
 .proyect {
     align-self: center;
-    border:2px solid #ccc;
-    padding:5px;
-    opacity:.3;
+    border: 2px solid #ccc;
+    padding: 5px;
+    opacity: 0.3;
 }
 
 .proyect:hover {
-    opacity:1;
-    border:3px solid #fff;
+    opacity: 1;
+    border: 3px solid #fff;
 }
 
-
 .contacto h2 {
-
-    margin:30px;
+    margin: 30px;
     color: white;
     text-align: center;
     font-size: 30px;
@@ -151,9 +225,11 @@ header a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
 }
+
+
 
 .footer-container {
     width: 90%;
