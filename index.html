@@ -11,7 +11,10 @@
 <body>
     <header>
         <nav>
-            <ul class="list-header">
+            <div id="toggle-menu" class="toggle-menu">
+                <img src="./images/menu.png" alt="">
+            </div>
+            <ul id="list-header" class="list-header">
                 <li><a class="links-main" href="#main">Inicio</a></li>
                 <li><a class="links-main2" href="#tecnologies">Tecnologias</a></li>
                 <li><a class="links-main3" href="#habilities">Habilidades</a></li>
@@ -100,11 +103,13 @@
                     <a download href="./documents/cv.pdf"><img width="55" src="./images/cv.png" alt="" /></a>
                 </li>
 
-                <li class="list-item-contacto"> <a href="https://api.whatsapp.com/send/?phone=3229300414"> <img width="55" src="./images/phone.png" alt="" />
+                <li class="list-item-contacto"> <a href="https://api.whatsapp.com/send/?phone=3229300414"> <img
+                            width="55" src="./images/phone.png" alt="" />
                 </li></a>
 
 
-                <li class="list-item-contacto"><a href="mailto:sebascasti2019gmail.com?"><img width="55" src="./images/email.png" alt="" /></a></li>
+                <li class="list-item-contacto"><a href="mailto:sebascasti2019gmail.com?"><img width="55"
+                            src="./images/email.png" alt="" /></a></li>
             </ul>
         </div>
 
@@ -138,6 +143,17 @@
 
 
         });
+
+
+        const toggleMenuElement = document.getElementById('toggle-menu');
+        const listHeader = document.getElementById('list-header');
+
+
+        toggleMenuElement.addEventListener('click', () => {
+            listHeader.classList.toggle('main-menu-show');
+
+        });
+
     </script>
 </body>
 
