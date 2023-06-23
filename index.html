@@ -5,10 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+
+
     <title>Portafolio</title>
 </head>
 
 <body>
+
     <header>
         <nav>
             <div id="toggle-menu" class="toggle-menu">
@@ -20,13 +23,19 @@
                 <li><a class="links-main3" href="#habilities">Habilidades</a></li>
                 <li><a class="links-main4" href="#proyects">Proyectos</a></li>
                 <li><a class="links-main5" href="#contacto">Contacto</a></li>
+
                 <li><button id="bdark"><img src="./images/dark-mode.png" alt=""></button></li>
+                <li><span class="es">Español</span>
+                    <input type="checkbox" name="" id="" class="check">
+                    <span class="en">Ingles</span>
+                </li>
             </ul>
 
         </nav>
     </header>
 
     <div class="container">
+
         <h1 id="main" class="title-main">Sobre Mi</h1>
 
         <p>Soy Sebastian Castillo, Diseñador y desarrollador Web Full-Stack.
@@ -119,42 +128,13 @@
             </footer>
         </div>
     </div>
-
-    <script>
-        const bdark = document.querySelector('#bdark');
-        const body = document.querySelector('body');
-        const a = document.querySelector('.links-main');
-        const a1 = document.querySelector('.links-main2');
-        const a2 = document.querySelector('.links-main3');
-        const a3 = document.querySelector('.links-main4');
-        const a4 = document.querySelector('.links-main5');
-
-        bdark.addEventListener('click', e => {
-            body.classList.toggle('darkmode');
-            a.classList.toggle('darkmode');
-            a1.classList.toggle('darkmode');
-            a2.classList.toggle('darkmode');
-            a3.classList.toggle('darkmode');
-            a4.classList.toggle('darkmode');
-
-
-
-
-
-
-        });
-
-
-        const toggleMenuElement = document.getElementById('toggle-menu');
-        const listHeader = document.getElementById('list-header');
-
-
-        toggleMenuElement.addEventListener('click', () => {
-            listHeader.classList.toggle('main-menu-show');
-
-        });
-
+    <script src="./javascript/dark-mode.js">
     </script>
+
+    <script src="./javascript/toggle-menu.js"></script>
+    <script src="./javascript/traductor.js"></script>
+
+
 </body>
 
 </html>

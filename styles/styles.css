@@ -59,6 +59,53 @@ header a:hover {
     z-index: 1;
 }
 
+.check {
+    position: relative;
+    width: 50px;
+}
+
+.check:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after {
+    left: 25px;
+    border: 2px solid rgb(56, 119, 255);
+}
+
+.check:checked:before {
+    background-color: #1a8cf7;
+}
+
 @media screen and (min-width: 1000px) {
     .toggle-menu {
         display: none;
