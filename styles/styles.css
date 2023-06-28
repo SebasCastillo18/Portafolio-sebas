@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+h1, h2, ul, footer, header, div {
+    margin:0;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +23,7 @@ a {
 }
 
 header {
-    margin:15px;
+    margin: 15px;
     width: 90%;
 }
 
@@ -24,8 +32,8 @@ header {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    gap:25px;
+    justify-content: center;
+    gap: 25px;
     transition: transform 0.3s;
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
@@ -39,8 +47,7 @@ header {
 }
 
 li {
-    display:inline-block;
-   
+    display: inline-block;
 }
 
 header a {
@@ -161,10 +168,11 @@ p {
 }
 
 .container {
-    margin: 70px auto;
+    margin: 15px auto 0;
 }
 
 .title-main {
+    margin:20px;
     text-align: center;
     font-style: normal;
     text-transform: capitalize;
@@ -184,6 +192,7 @@ p {
 .title-stack {
     text-align: center;
     text-transform: uppercase;
+    color: rgb(207, 153, 2);
 }
 
 .stack_tecnologies img {
@@ -191,13 +200,13 @@ p {
 }
 
 .stack_tecnologies {
-    padding:25px;
+    padding: 25px;
     margin: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-   row-gap: 45px;
+    row-gap: 45px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -270,14 +279,15 @@ p {
 }
 
 .habilities {
-    margin:45px 0;
+    margin: 45px 0;
 }
 
 .habilities h2 {
     text-align: center;
     text-transform: uppercase;
     text-transform: uppercase;
-    margin:20px;
+    margin: 25px;
+    color: rgb(207, 153, 2);
 }
 
 .list-habilities {
@@ -296,7 +306,7 @@ p {
     border: 2px solid white;
     background-color: rgb(219, 174, 49);
     border-radius: 15px;
-    border:2px solid #000;
+    border: 2px solid #000;
     width: 90%;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -306,7 +316,7 @@ p {
 }
 
 .proyects {
-    margin:40px 0;
+    margin: 40px 0;
 }
 
 .title-proyects {
@@ -314,10 +324,11 @@ p {
     margin: 25px;
     font-size: 30px;
     text-transform: uppercase;
-    color:rgb(228, 145, 50);
+    color: rgb(228, 145, 50);
 }
 
 .list-proyects {
+    width:100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -327,7 +338,6 @@ p {
 
 .list-proyects div {
     position: relative;
-    opacity: 0.99;
     padding: 15px 10px;
     border-radius: 3%;
     background: linear-gradient(45deg,
@@ -377,8 +387,6 @@ p {
 .proyect {
     align-self: center;
     border: 2px solid #ccc;
-    
-   
 }
 
 .proyect img:hover {
@@ -405,7 +413,7 @@ p {
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    color:rgb(228, 145, 50);
+    color: rgb(228, 145, 50);
 }
 
 .list-contacto {
@@ -477,7 +485,7 @@ p {
     font-size: 25px;
     background: white;
     padding: 25px;
-    border:2px solid #000;
+    border: 2px solid #000;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
