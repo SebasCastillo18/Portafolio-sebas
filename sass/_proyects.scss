@@ -1,0 +1,87 @@
+
+
+.proyects {
+    margin: 20px auto;
+    width:90%;
+}
+
+.title-proyects {
+    text-align: center;
+    margin: 45px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(228, 145, 50);
+}
+
+.list-proyects {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 85px 35px;
+    justify-content: space-evenly;
+}
+
+.list-proyects div {
+    position: relative;
+    padding: 15px 10px;
+    border-radius: 3%;
+    background: linear-gradient(45deg,
+            rgb(0, 195, 255),
+            rgb(42, 134, 255),
+            rgb(238, 226, 65),
+            rgb(6, 112, 63),
+            rgb(67, 21, 119),
+            rgb(91, 135, 255),
+            rgb(253, 188, 9),
+            rgb(108, 255, 230));
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+
+.list-proyects div::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,            rgb(0, 195, 255),            rgb(42, 134, 255),            rgb(238, 226, 65),            rgb(6, 112, 63),            rgb(67, 21, 119),            rgb(91, 135, 255),            rgb(253, 188, 9),            rgb(108, 255, 230));
+    background-size: 800%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    -webkit-animation: glowing 15s linear infinite;
+}
+
+.proyect {
+    align-self: center;
+    border: 2px solid #ccc;
+}
+
+.proyect img:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transition: 2s ease-in-out;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -ms-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    cursor: pointer;
+}

@@ -3,8 +3,13 @@
     padding: 0;
 }
 
-h1, h2, ul, footer, header, div {
-    margin:0;
+h1,
+h2,
+ul,
+footer,
+header,
+div {
+    margin: 0;
 }
 
 img {
@@ -22,6 +27,26 @@ a {
     color: white;
 }
 
+.container {
+    margin: 15px auto 0;
+}
+
+.title-main {
+    margin: 20px;
+    text-align: center;
+    font-style: normal;
+    text-transform: capitalize;
+    color: rgb(207, 153, 2);
+    font-size: 45px;
+}
+
+p {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
 header {
     margin: 0 auto;
     width: 90%;
@@ -34,7 +59,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap:35px;
+    column-gap: 35px;
     row-gap: 45px;
     transition: transform 0.3s;
     transform: translateY(-100%);
@@ -169,34 +194,13 @@ p {
     color: black;
 }
 
-.container {
-    margin: 15px auto 0;
-}
-
-.title-main {
-    margin:20px;
-    text-align: center;
-    font-style: normal;
-    text-transform: capitalize;
-    color: rgb(207, 153, 2);
-    font-size: 45px;
-}
-
-p {
-
-    width:90%;
-    margin:30px auto;
-    text-align: center;
-    font-size: 25px;
-}
-
 .stack {
-    width:90%;
-    margin:50px auto;
+    width: 90%;
+    margin: 50px auto;
 }
 
 .title-stack {
-    margin:45px;
+    margin: 45px;
     font-size: 45px;
     text-align: center;
     text-transform: uppercase;
@@ -208,7 +212,7 @@ p {
 }
 
 .stack_tecnologies {
-    width:90%;
+    width: 90%;
     padding: 25px;
     margin: 20px auto;
     display: flex;
@@ -217,7 +221,6 @@ p {
     justify-content: space-between;
     row-gap: 65px;
     column-gap: 30px;
-   
 }
 
 .stack_tecnologies li {
@@ -285,7 +288,7 @@ p {
 
 .habilities {
     margin: 10px auto;
-    width:95%;
+    width: 95%;
 }
 
 .habilities h2 {
@@ -324,7 +327,7 @@ p {
 
 .proyects {
     margin: 20px auto;
-    width:90%;
+    width: 90%;
 }
 
 .title-proyects {
@@ -336,7 +339,7 @@ p {
 }
 
 .list-proyects {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -371,7 +374,15 @@ p {
     z-index: -1;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg,            rgb(0, 195, 255),            rgb(42, 134, 255),            rgb(238, 226, 65),            rgb(6, 112, 63),            rgb(67, 21, 119),            rgb(91, 135, 255),            rgb(253, 188, 9),            rgb(108, 255, 230));
+    background: linear-gradient(45deg,
+            rgb(0, 195, 255),
+            rgb(42, 134, 255),
+            rgb(238, 226, 65),
+            rgb(6, 112, 63),
+            rgb(67, 21, 119),
+            rgb(91, 135, 255),
+            rgb(253, 188, 9),
+            rgb(108, 255, 230));
     background-size: 800%;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -407,10 +418,10 @@ p {
     -o-border-radius: 30%;
     cursor: pointer;
 }
-.contacto {
 
-    width:90%;
-    margin:10px auto;
+.contacto {
+    width: 90%;
+    margin: 10px auto;
 }
 
 .contacto h2 {
@@ -427,8 +438,8 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    row-gap:55px;
-    column-gap:35px;
+    row-gap: 55px;
+    column-gap: 35px;
 }
 
 .list-item-contacto {
@@ -457,7 +468,6 @@ p {
     25% {
         background: rgb(45, 49, 248);
         border-top: 8px solid #f539d6;
-
         left: 5px;
     }
 
@@ -483,7 +493,7 @@ p {
 
 .footer-container {
     width: 90%;
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -502,3 +512,5 @@ p {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+
+/*# sourceMappingURL=styles.css.map */
