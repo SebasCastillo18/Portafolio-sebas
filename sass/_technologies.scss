@@ -1,62 +1,109 @@
 .stack {
     width: 90%;
     margin: 50px auto;
-}
 
-.title-stack {
-    margin: 45px;
-    font-size: 45px;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(207, 153, 2);
-}
-
-.stack_tecnologies img {
-    background: transparent;
-    animation-name: mover;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    transition: all 2ms;
-    -webkit-transition: all 2ms;
-    -moz-transition: all 2ms;
-    -ms-transition: all 2ms;
-    -o-transition: all 2ms;
-}
-
-.stack_tecnologies {
-    width: 90%;
-    padding: 25px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 65px;
-    column-gap: 30px;
-}
-
-@media (max-width:408px) {
-
-    .stack {
-        width:100%;
-        margin:0px auto;
-    }
-
-    .title-stack{
-
+    .title-stack {
+        margin: 45px;
+        font-size: 45px;
         text-align: center;
-        margin:0 auto;
+        text-transform: uppercase;
+        color: rgb(207, 153, 2);
     }
 
-.stack_tecnologies{
-    flex-direction: column;
-    align-content: center;
+    .stack_tecnologies {
+        width: 90%;
+        padding: 25px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 65px;
+        column-gap: 30px;
 
-    img {
-        width:100%;
+        li {
+            position: relative;
+            opacity: 0.99;
+            padding: 10px 3px;
+            border-radius: 30%;
+            background: linear-gradient(45deg,
+                    red,
+                    blue,
+                    deeppink,
+                    blue,
+                    red,
+                    blue,
+                    deeppink,
+                    blue);
+            -webkit-border-radius: 30%;
+            -moz-border-radius: 30%;
+            -ms-border-radius: 30%;
+            -o-border-radius: 30%;
+
+            img {
+                background: transparent;
+                animation-name: mover;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                transition: all 2ms;
+                -webkit-transition: all 2ms;
+                -moz-transition: all 2ms;
+                -ms-transition: all 2ms;
+                -o-transition: all 2ms;
+            }
+
+            &::before {
+                content: "";
+                top: 0;
+                left: 0;
+                position: absolute;
+                z-index: -1;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(45deg,
+                        red,
+                        blue,
+                        deeppink,
+                        blue,
+                        red,
+                        blue,
+                        deeppink,
+                        blue);
+                background-size: 800%;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+                animation: glowing 20s linear infinite;
+                -webkit-animation: glowing 5s linear infinite;
+            }
+        }
     }
 }
+
+@media (max-width: 408px) {
+    .stack {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .title-stack {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .stack_tecnologies {
+        flex-direction: column;
+        align-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
 @keyframes mover {
@@ -77,26 +124,6 @@
     }
 }
 
-.stack_tecnologies li {
-    position: relative;
-    opacity: 0.99;
-    padding: 10px 3px;
-    border-radius: 30%;
-    background: linear-gradient(45deg,
-            red,
-            blue,
-            deeppink,
-            blue,
-            red,
-            blue,
-            deeppink,
-            blue);
-    -webkit-border-radius: 30%;
-    -moz-border-radius: 30%;
-    -ms-border-radius: 30%;
-    -o-border-radius: 30%;
-}
-
 @keyframes glowing {
     0% {
         background-position: 0 0;
@@ -111,33 +138,4 @@
         background-position: 0 0;
         background-position: 0 0;
     }
-}
-
-.stack_tecnologies li::before {
-    content: "";
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(45deg,
-            red,
-            blue,
-            deeppink,
-            blue,
-            red,
-            blue,
-            deeppink,
-            blue);
-    background-size: 800%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    animation: glowing 20s linear infinite;
-    -webkit-animation: glowing 5s linear infinite;
 }
