@@ -1,41 +1,39 @@
-
 .contacto {
+    width: 90%;
+    margin: 10px auto;
 
-    width:90%;
-    margin:10px auto;
-}
+    h2 {
+        margin: 50px;
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        color: rgb(228, 145, 50);
+    }
 
-.contacto h2 {
-    margin: 50px;
-    text-align: center;
-    font-size: 35px;
-    text-transform: uppercase;
-    color: rgb(228, 145, 50);
-}
+    .list-contacto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 55px;
+        column-gap: 35px;
 
-.list-contacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    row-gap:55px;
-    column-gap:35px;
-}
-
-.list-item-contacto {
-    animation-name: animation-main;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
-    padding: 6px;
-    position: relative;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+        .list-item-contacto {
+            animation-name: animation-main;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            padding: 6px;
+            position: relative;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+        }
+    }
 }
 
 @keyframes animation-main {

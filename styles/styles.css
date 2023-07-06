@@ -3,7 +3,12 @@
   padding: 0;
 }
 
-h1, h2, ul, footer, header, div {
+h1,
+h2,
+ul,
+footer,
+header,
+div {
   margin: 0;
 }
 
@@ -25,8 +30,7 @@ a {
 .container {
   margin: 15px auto 0;
 }
-
-.title-main {
+.container .title-main {
   margin: 20px;
   text-align: center;
   font-style: normal;
@@ -34,8 +38,7 @@ a {
   color: rgb(207, 153, 2);
   font-size: 45px;
 }
-
-p {
+.container p {
   width: 90%;
   margin: 30px auto;
   text-align: center;
@@ -306,7 +309,6 @@ p {
   margin: 10px auto;
   width: 95%;
 }
-
 .habilities h2 {
   font-size: 45px;
   text-align: center;
@@ -315,8 +317,7 @@ p {
   margin: 45px;
   color: rgb(207, 153, 2);
 }
-
-.list-habilities {
+.habilities .list-habilities {
   list-style: none;
   padding: 0;
   display: flex;
@@ -324,8 +325,7 @@ p {
   flex-wrap: wrap;
   row-gap: 48px;
 }
-
-.items-habilities {
+.habilities .list-habilities .items-habilities {
   align-self: center;
   text-align: center;
   padding: 10px 0 10px 0;
@@ -432,7 +432,6 @@ p {
   width: 90%;
   margin: 10px auto;
 }
-
 .contacto h2 {
   margin: 50px;
   text-align: center;
@@ -440,8 +439,7 @@ p {
   text-transform: uppercase;
   color: rgb(228, 145, 50);
 }
-
-.list-contacto {
+.contacto .list-contacto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -450,8 +448,7 @@ p {
   row-gap: 55px;
   column-gap: 35px;
 }
-
-.list-item-contacto {
+.contacto .list-contacto .list-item-contacto {
   animation-name: animation-main;
   animation-duration: 3s;
   animation-timing-function: ease;
@@ -502,8 +499,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
-.footer-text {
+.footer-container .footer-text {
   color: rgb(0, 0, 0);
   text-align: center;
   font-size: 20px;
