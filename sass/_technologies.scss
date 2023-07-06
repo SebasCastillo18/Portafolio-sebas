@@ -85,23 +85,29 @@
     }
 }
 
-@media (max-width: 408px) {
+@media (max-width: 413px) {
     .stack {
-        width: 100%;
-        margin: 0px auto;
-    }
+        width: 90%;
 
-    .title-stack {
-        text-align: center;
-        margin: 0 auto;
-    }
+        .title-stack {
+            font-size: 28px;
+            text-align: center;
+        }
 
-    .stack_tecnologies {
-        flex-direction: column;
-        align-content: center;
+        .stack_tecnologies {
+            flex-direction: column;
+            width:100%;
+            align-content: center;
+            padding: 0px;
+            margin:0px auto;
 
-        img {
-            width: 100%;
+            li {
+                width: 50%;
+            }
+
+            img {
+                width: 100%;
+            }
         }
     }
 }

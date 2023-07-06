@@ -254,20 +254,25 @@ p {
   -webkit-animation: glowing 5s linear infinite;
 }
 
-@media (max-width: 408px) {
+@media (max-width: 413px) {
   .stack {
+    width: 90%;
+  }
+  .stack .title-stack {
+    font-size: 28px;
+    text-align: center;
+  }
+  .stack .stack_tecnologies {
+    flex-direction: column;
     width: 100%;
+    align-content: center;
+    padding: 0px;
     margin: 0px auto;
   }
-  .title-stack {
-    text-align: center;
-    margin: 0 auto;
+  .stack .stack_tecnologies li {
+    width: 50%;
   }
-  .stack_tecnologies {
-    flex-direction: column;
-    align-content: center;
-  }
-  .stack_tecnologies img {
+  .stack .stack_tecnologies img {
     width: 100%;
   }
 }
