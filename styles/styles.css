@@ -203,6 +203,7 @@ p {
   animation-name: mover;
   animation-duration: 3s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
   transition: all 2ms;
   -webkit-transition: all 2ms;
   -moz-transition: all 2ms;
@@ -217,46 +218,42 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   row-gap: 65px;
   column-gap: 30px;
 }
 
+@media (max-width: 408px) {
+  .stack {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .title-stack {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .stack_tecnologies {
+    flex-direction: column;
+    align-content: center;
+  }
+  .stack_tecnologies img {
+    width: 100%;
+  }
+}
 @keyframes mover {
-  0% {
-    transform: translateX(-800px) rotate(360deg);
-    -webkit-transform: translateX(-800px) rotate(360deg);
-    -moz-transform: translateX(-800px) rotate(360deg);
-    -ms-transform: translateX(-800px) rotate(360deg);
-    -o-transform: translateX(-800px) rotate(360deg);
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
-  25% {
-    transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(200px);
-    -webkit-transform: translateX(200px);
-    -moz-transform: translateX(200px);
-    -ms-transform: translateX(200px);
-    -o-transform: translateX(200px);
-  }
-  75% {
-    transform: translateX(-600px);
-    -webkit-transform: translateX(-600px);
-    -moz-transform: translateX(-600px);
-    -ms-transform: translateX(-600px);
-    -o-transform: translateX(-600px);
-  }
-  100% {
-    transform: translateX(0px) rotate(360deg);
-    -webkit-transform: translateX(0px) rotate(360deg);
-    -moz-transform: translateX(0px) rotate(360deg);
-    -ms-transform: translateX(0px) rotate(360deg);
-    -o-transform: translateX(0px) rotate(360deg);
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
 .stack_tecnologies li {
@@ -403,6 +400,15 @@ p {
   border: 2px solid #ccc;
 }
 
+@media (max-width: 870px) {
+  .proyect {
+    width: 90%;
+    height: auto;
+  }
+  .proyect img {
+    width: 100%;
+  }
+}
 .proyect img:hover {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);

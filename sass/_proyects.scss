@@ -67,6 +67,24 @@
     border: 2px solid #ccc;
 }
 
+@media (max-width:870px){
+
+
+    .proyect {
+        width:90%;
+        height:auto;
+
+        img {
+            width:100%;
+        }
+
+    }
+
+    
+}
+
+
+
 .proyect img:hover {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
