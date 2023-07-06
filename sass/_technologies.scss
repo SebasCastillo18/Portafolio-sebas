@@ -13,6 +13,14 @@
 
 .stack_tecnologies img {
     background: transparent;
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    transition: all 2ms;
+    -webkit-transition: all 2ms;
+    -moz-transition: all 2ms;
+    -ms-transition: all 2ms;
+    -o-transition: all 2ms;
 }
 
 .stack_tecnologies {
@@ -26,6 +34,50 @@
     row-gap: 65px;
     column-gap: 30px;
    
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(-800px) rotate(360deg);
+        -webkit-transform: translateX(-800px) rotate(360deg);
+        -moz-transform: translateX(-800px) rotate(360deg);
+        -ms-transform: translateX(-800px) rotate(360deg);
+        -o-transform: translateX(-800px) rotate(360deg);
+}
+
+    25% {
+
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        
+    }
+
+    50% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+        -moz-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+        -o-transform: translateX(200px);
+}
+
+75% {
+    transform: translateX(-600px);
+    -webkit-transform: translateX(-600px);
+    -moz-transform: translateX(-600px);
+    -ms-transform: translateX(-600px);
+    -o-transform: translateX(-600px);
+}
+
+100% {
+    transform: translateX(0px) rotate(360deg);
+    -webkit-transform: translateX(0px) rotate(360deg);
+    -moz-transform: translateX(0px) rotate(360deg);
+    -ms-transform: translateX(0px) rotate(360deg);
+    -o-transform: translateX(0px) rotate(360deg);
+}
 }
 
 .stack_tecnologies li {
@@ -51,14 +103,19 @@
 @keyframes glowing {
     0% {
         background-position: 0 0;
-    }
+   
+}
 
     50% {
         background-position: 400% 0;
-    }
+        background-position: 0 0;
+     
+}
 
     100% {
         background-position: 0 0;
+        background-position: 0 0;
+     
     }
 }
 
